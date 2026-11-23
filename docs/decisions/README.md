@@ -15,26 +15,34 @@
 
 ### 2026-11-23
 
-| 문서                                                                   | 이슈 | 상태              |
-| ---------------------------------------------------------------------- | ---- | ----------------- |
-| [기술 스택 및 저장소 구성](2026-11-23-bootstrap-stack-and-repo.md)     | -    | 채택              |
-| [코드 정리 도구: ESLint + Prettier](2026-11-23-001-eslint-prettier.md) | #1   | 채택              |
-| [작업 흐름: 이슈 → 브랜치 → PR](2026-11-23-002-workflow-issue-pr.md)   | #2   | 채택 (014로 보완) |
-| [CI: GitHub Actions](2026-11-23-003-ci-github-actions.md)              | #3   | 채택              |
-| [의사결정 기록 체계 도입](2026-11-23-008-decision-log.md)              | #8   | 채택 (012로 보완) |
-| [작업 관리: GitHub Project 보드](2026-11-23-010-project-board.md)      | #10  | 채택              |
-| [회의록과 함께 의사결정 기록](2026-11-23-012-meeting-notes.md)         | #12  | 채택 (008 보완)   |
-| [PR은 항상 main 기준, 스택 금지](2026-11-23-014-no-stacked-prs.md)     | #14  | 채택 (002 보완)   |
+| 문서                                                                                          | 이슈 | 상태                        |
+| --------------------------------------------------------------------------------------------- | ---- | --------------------------- |
+| [기술 스택 및 저장소 구성](2026-11-23-bootstrap-stack-and-repo.md)                            | -    | 채택 (004에서 재검토, 유지) |
+| [코드 정리 도구: ESLint + Prettier](2026-11-23-001-eslint-prettier.md)                        | #1   | 채택                        |
+| [작업 흐름: 이슈 → 브랜치 → PR](2026-11-23-002-workflow-issue-pr.md)                          | #2   | 채택 (014로 보완)           |
+| [CI: GitHub Actions](2026-11-23-003-ci-github-actions.md)                                     | #3   | 채택                        |
+| [의사결정 기록 체계 도입](2026-11-23-008-decision-log.md)                                     | #8   | 채택 (012로 보완)           |
+| [작업 관리: GitHub Project 보드](2026-11-23-010-project-board.md)                             | #10  | 채택                        |
+| [회의록과 함께 의사결정 기록](2026-11-23-012-meeting-notes.md)                                | #12  | 채택 (008 보완)             |
+| [PR은 항상 main 기준, 스택 금지](2026-11-23-014-no-stacked-prs.md)                            | #14  | 채택 (002 보완)             |
+| [아이디어 확정: 자전거 충돌 위험 계산기](2026-11-23-004-idea-bike-collision-risk.md)          | #4   | 채택                        |
+| [앱 형태와 연산 위치: React 웹앱 + 브라우저 안 계산](2026-11-23-004-web-app-local-compute.md) | #4   | 채택                        |
+| [화면 디자인: 백미러 배경 위에 좌우 부상도](2026-11-23-017-design-main-screen.md)             | #17  | 채택                        |
+| [MVP 범위 확정](2026-11-23-017-mvp-scope.md)                                                  | #17  | 채택                        |
+| [MVP 정의, 프로젝트 구조, 기술 스택](2026-11-23-037-project-structure-and-stack.md)           | #37  | 채택                        |
 
 ## 이슈별
 
-| 이슈 | 문서                                                               |
-| ---- | ------------------------------------------------------------------ |
-| -    | [기술 스택 및 저장소 구성](2026-11-23-bootstrap-stack-and-repo.md) |
-| #1   | [ESLint + Prettier](2026-11-23-001-eslint-prettier.md)             |
-| #2   | [이슈 → 브랜치 → PR](2026-11-23-002-workflow-issue-pr.md)          |
-| #3   | [GitHub Actions](2026-11-23-003-ci-github-actions.md)              |
-| #8   | [의사결정 기록 체계](2026-11-23-008-decision-log.md)               |
-| #10  | [GitHub Project 보드](2026-11-23-010-project-board.md)             |
-| #12  | [회의록 + 결정 기록 필수화](2026-11-23-012-meeting-notes.md)       |
-| #14  | [PR은 항상 main 기준](2026-11-23-014-no-stacked-prs.md)            |
+| 이슈 | 문서                                                                                                                        |
+| ---- | --------------------------------------------------------------------------------------------------------------------------- |
+| -    | [기술 스택 및 저장소 구성](2026-11-23-bootstrap-stack-and-repo.md)                                                          |
+| #1   | [ESLint + Prettier](2026-11-23-001-eslint-prettier.md)                                                                      |
+| #2   | [이슈 → 브랜치 → PR](2026-11-23-002-workflow-issue-pr.md)                                                                   |
+| #3   | [GitHub Actions](2026-11-23-003-ci-github-actions.md)                                                                       |
+| #8   | [의사결정 기록 체계](2026-11-23-008-decision-log.md)                                                                        |
+| #10  | [GitHub Project 보드](2026-11-23-010-project-board.md)                                                                      |
+| #12  | [회의록 + 결정 기록 필수화](2026-11-23-012-meeting-notes.md)                                                                |
+| #14  | [PR은 항상 main 기준](2026-11-23-014-no-stacked-prs.md)                                                                     |
+| #4   | [아이디어 확정](2026-11-23-004-idea-bike-collision-risk.md), [앱 형태와 연산 위치](2026-11-23-004-web-app-local-compute.md) |
+| #17  | [화면 디자인](2026-11-23-017-design-main-screen.md), [MVP 범위](2026-11-23-017-mvp-scope.md)                                |
+| #37  | [MVP 정의, 구조, 기술 스택](2026-11-23-037-project-structure-and-stack.md)                                                  |
