@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { GPS_STATUS_TEXT, useGpsSpeed } from '../../sensors/useGpsSpeed'
 import type { Settings } from '../../settings/settings'
+import { CameraBackground } from './CameraBackground'
 import { RideScreen } from './RideScreen'
 
 interface Props {
@@ -8,7 +9,10 @@ interface Props {
   onOpenSettings: () => void
 }
 
-/** 센서(GPS)를 연결해 주행 화면에 넘긴다. GPS를 못 쓰면 슬라이더로 속력을 받는다. */
+/**
+ * 센서(GPS, 카메라)를 연결해 주행 화면에 넘긴다.
+ * GPS를 못 쓰면 슬라이더로 속력을 받고, 카메라를 못 쓰면 어두운 배경을 쓴다.
+ */
 export function RideContainer({ settings, onOpenSettings }: Props) {
   const gps = useGpsSpeed()
   const [manualKmh, setManualKmh] = useState(20)
@@ -20,6 +24,7 @@ export function RideContainer({ settings, onOpenSettings }: Props) {
       settings={settings}
       speedKmh={speed}
       speedStatus={{ text: GPS_STATUS_TEXT[gps.status], ok: useGps }}
+      background={<CameraBackground facing={settings.camera} />}
       onOpenSettings={onOpenSettings}
       controls={
         useGps ? null : (

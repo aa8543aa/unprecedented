@@ -76,7 +76,7 @@
 /* 좌우 부상도 */
 .gauge {
   position: absolute;
-  top: 26%;
+  top: 24%;
   width: 112px;
   padding: 14px 10px 16px;
   border-radius: 22px;
@@ -138,7 +138,7 @@
 
 .gauge__track {
   width: 28px;
-  height: min(230px, 28dvh);
+  height: clamp(120px, calc(100dvh - 560px), 230px);
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.14);
   display: flex;
@@ -242,4 +242,28 @@
   min-width: 0;
   min-height: 44px;
   accent-color: var(--accent);
+}
+
+/* 카메라 백미러 배경 */
+.camera {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1b1f24;
+}
+
+.camera__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 실제 거울처럼 좌우 반전 */
+  transform: scaleX(-1);
+}
+
+.camera__status {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-muted);
 }
