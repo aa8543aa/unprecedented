@@ -27,4 +27,4 @@ npm run dev
 
 ## 의사결정 기록
 
-모든 결정과 그 이유는 [docs/decisions](docs/decisions/README.md)에 날짜별·이슈별로 정리합니다.
+모든 결정은 [회의록](docs/meetings/README.md)과 함께 남기고, 결정과 그 이유는 [docs/decisions](docs/decisions/README.md)에 날짜별·이슈별로 정리합니다. (필수)
