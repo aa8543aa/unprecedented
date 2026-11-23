@@ -2,3 +2,6 @@ dist
 coverage
 node_modules
 package-lock.json
+
+# 오너의 자유 형식 아이디어 메모는 서식을 바꾸지 않는다
+아이디어 정리/
