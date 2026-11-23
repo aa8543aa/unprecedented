@@ -1,0 +1,30 @@
+name: 🐛 버그
+description: 의도와 다르게 동작하는 문제
+title: 'fix: '
+labels: ['type: bug']
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: 현상
+      description: 무엇이 잘못되었나요?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 방법
+      value: |
+        1.
+        2.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대 동작
+  - type: textarea
+    id: env
+    attributes:
+      label: 환경
+      description: 브라우저, OS, 커밋/버전 등
