@@ -21,6 +21,7 @@
 | [작업 흐름: 이슈 → 브랜치 → PR](2026-11-23-002-workflow-issue-pr.md)   | #2   | 채택 |
 | [CI: GitHub Actions](2026-11-23-003-ci-github-actions.md)              | #3   | 채택 |
 | [의사결정 기록 체계 도입](2026-11-23-008-decision-log.md)              | #8   | 채택 |
+| [작업 관리: GitHub Project 보드](2026-11-23-010-project-board.md)      | #10  | 채택 |
 
 ## 이슈별
 
@@ -31,3 +32,4 @@
 | #2   | [이슈 → 브랜치 → PR](2026-11-23-002-workflow-issue-pr.md)          |
 | #3   | [GitHub Actions](2026-11-23-003-ci-github-actions.md)              |
 | #8   | [의사결정 기록 체계](2026-11-23-008-decision-log.md)               |
+| #10  | [GitHub Project 보드](2026-11-23-010-project-board.md)             |

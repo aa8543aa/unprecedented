@@ -5,7 +5,8 @@
 ## 1. 모든 작업은 이슈에서 시작한다
 
 - 기능, 버그, 설정, 문서 등 **모든 변경은 먼저 이슈로 등록**합니다.
-- 이슈는 [GitHub Project 보드](../../projects)에서 상태(Todo → In Progress → Done)로 관리합니다.
+- 이슈는 [GitHub Project 보드](https://github.com/users/aa8543aa/projects/2)에서 관리합니다.
+  - 새 이슈는 바로 보드에 추가하고 `Status`(Todo → In Progress → Done)와 `Phase`(MVP / post-MVP)를 지정합니다.
 - 라벨
   - 종류: `type: feature` `type: bug` `type: chore` `type: docs` `type: refactor` `type: ci` `type: idea`
   - 단계: `phase: MVP` `phase: post-MVP`
