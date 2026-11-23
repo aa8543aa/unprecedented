@@ -21,7 +21,7 @@
 
 - PR의 base는 **항상 `main`** 으로 한다. 앞 PR에 의존하는 작업은 앞 PR이 머지된 뒤 main에서 브랜치를 새로 만든다.
 - 머지 방식은 **Squash merge**를 기본으로 하고, 머지 후 head 브랜치를 삭제한다.
-- 저장소 설정 `Automatically delete head branches`를 켠다.
+- 저장소 설정 `Automatically delete head branches`는 **켜지 않는다** (오너 결정). 브랜치는 머지할 때 PR 화면의 "Delete branch"로 직접 삭제한다.
 - 이번 누락분은 예외로 PR 1개(#14)에 모아 main에 반영한다. 내용은 이미 각 PR(#6, #7, #9, #11, #13)에서 리뷰되었다.
 
 ## 이유
@@ -31,3 +31,4 @@
 ## 영향
 
 - CONTRIBUTING 2절에 "base는 항상 main"을 명시한다.
+- 자동 삭제가 꺼져 있으므로 스택 PR은 다시 같은 문제를 일으킨다. 스택 금지 규칙이 유일한 안전장치다.
