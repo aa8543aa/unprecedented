@@ -1,0 +1,245 @@
+.ride {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.ride__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.panel {
+  background: var(--overlay);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.num {
+  font-family: var(--num);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 상단 중앙 속력 */
+.ride__speed {
+  position: absolute;
+  top: max(24px, env(safe-area-inset-top));
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 28px 12px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ride__speed-value {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.ride__speed-value .num {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.ride__unit {
+  font-size: 16px;
+  font-weight: 500;
+  color: #c9d2db;
+}
+
+.ride__status {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #c9d2db;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--tone-mid);
+}
+
+.dot--ok {
+  background: var(--ok);
+}
+
+/* 좌우 부상도 */
+.gauge {
+  position: absolute;
+  top: 26%;
+  width: 112px;
+  padding: 14px 10px 16px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  background: var(--overlay);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  --tone: var(--tone-low);
+}
+
+.gauge--left {
+  left: 12px;
+}
+
+.gauge--right {
+  right: 12px;
+}
+
+.tone--mid {
+  --tone: var(--tone-mid);
+}
+
+.tone--high {
+  --tone: var(--tone-high);
+}
+
+.tone--severe {
+  --tone: var(--tone-severe);
+}
+
+.gauge__title {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.gauge__target {
+  min-height: 44px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 22px;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.gauge__sub {
+  font-size: 11px;
+  color: #c9d2db;
+}
+
+.gauge__track {
+  width: 28px;
+  height: min(230px, 28dvh);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.14);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.gauge__fill {
+  width: 100%;
+  border-radius: 14px;
+  background: var(--tone);
+  transition:
+    height 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.gauge__pct {
+  font-family: var(--num);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--tone);
+}
+
+.gauge__recovery {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.gauge__level {
+  font-size: 11px;
+  color: #c9d2db;
+}
+
+/* 하단 */
+.ride__bottom {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: max(20px, env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ride__footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ride__note {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 14px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ride__note small {
+  font-size: 11px;
+  font-weight: 400;
+  color: #c9d2db;
+}
+
+.ride__settings {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border: 0;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gauge__fill {
+    transition: none;
+  }
+}
+
+/* 속력 직접 입력 (GPS가 없을 때) */
+.speed-input {
+  padding: 10px 14px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.speed-input input {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  accent-color: var(--accent);
+}
