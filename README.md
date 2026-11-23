@@ -24,3 +24,7 @@ npm run dev
 ## 작업 방식
 
 모든 작업은 이슈 → 브랜치 → PR 순서로 진행합니다. 자세한 내용은 [CONTRIBUTING.md](CONTRIBUTING.md)를 참고하세요.
+
+## 의사결정 기록
+
+모든 결정과 그 이유는 [docs/decisions](docs/decisions/README.md)에 날짜별·이슈별로 정리합니다.
